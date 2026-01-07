@@ -11,12 +11,12 @@ The project focuses on clear state management, intentional UX decisions, and cle
 (6) Persistent storage using localStorage.
 
 # Security model (Important design decision):
-This application usees passowrd-based locking only.
+# This application uses passowrd-based locking only.
 (1) A note cannot be locked without a password.
 (2) Locking always implies password protection.
 (3) Unlocking always requires password verification.
 (4) There is no "soft lock" or visibility-only lock.
-This design was chosen intentionally to:
+# This design was chosen intentionally to:
 (1) Avoid ambiguous lock states.
 (2) Keep security semantics consistent.
 (3) Reduce edge cases and UX confusion.
