@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Secure Notes</h1>
+
+    <form id="note-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="content" placeholder="Write your note..." required></textarea>
+      <input type="password" id="password" placeholder="Optional password (for lock)" />
+
+      <div class="form-actions">
+        <button type="submit">Save Note</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+      </div>
+    </form>
+
+
+    <ul id="notes-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

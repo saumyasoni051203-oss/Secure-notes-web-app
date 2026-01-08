@@ -1,0 +1,136 @@
+/* Reset basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* Main container */
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+#title,
+#content {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#content {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button */
+button {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b5be0;
+}
+
+/* Notes list */
+#notes-list {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual note */
+#notes-list li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #4a6cf7;
+}
+
+#notes-list h3 {
+  margin-bottom: 5px;
+}
+
+#notes-list p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.actions button:hover {
+  background-color: #d0d0d0;
+}
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+#cancel-btn {
+  background-color: #cccccc;
+  color: #333;
+}
+
+#cancel-btn:hover {
+  background-color: #bbbbbb;
+}
+.actions button:nth-child(1) {
+  background-color: #ffd966; /* Edit */
+}
+
+.actions button:nth-child(2) {
+  background-color: #ff6b6b; /* Delete */
+  color: white;
+}
+
+.actions button:nth-child(3) {
+  background-color: #4a6cf7; /* Lock/Unlock */
+  color: white;
+}
