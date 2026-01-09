@@ -11,7 +11,7 @@ The project focuses on clear state management, intentional UX decisions, and cle
 (6) Persistent storage using localStorage.
 
 # Security model (Important design decision):
-# This application uses passowrd-based locking only.
+# This application uses password-based locking only.
 (1) A note cannot be locked without a password.
 (2) Locking always implies password protection.
 (3) Unlocking always requires password verification.
@@ -48,5 +48,5 @@ script.js
 This project was built to:
 (1) Practice real-world state handling.
 (2) Demonstrate intentional UX and security decisions.
-(3) void tutorial-style or over-engineered implementations.
+(3) Avoid tutorial-style or over-engineered implementations.
 
